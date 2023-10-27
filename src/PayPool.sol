@@ -7,7 +7,7 @@ import {Ownable} from "@openzeppelin/contracts/access/Ownable.sol";
 contract PayPool is Ownable {
     // Contracts that are participating in the referral campaign.
     address[] public memberContracts;
-    address public tokenAddress;
+    address public tokenAddress = 0x1f9840a85d5aF5bf1D1762F925BDADdC4201F984;
     uint256 public referrerBips = 5000;
     uint256 public refereeBips = 3000;
     uint256 public serviceBips = 2000;
